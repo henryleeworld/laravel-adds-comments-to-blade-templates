@@ -1,4 +1,4 @@
-# Laravel 10 將註解新增到 Blade 模板中
+# Laravel 11 將註解新增到 Blade 模板中
 
 引入 spatie 的 laravel-blade-comments 套件來擴增將註解新增到 Blade 模板中，註解是會被瀏覽器忽略，並且不會被使用者看到的，它們存在的目的是要讓你得以在原始碼中說明你的原始碼是如何運作的、每段原始碼的作用等等。
 
@@ -22,5 +22,5 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/TXfqoMO.png)
+![](https://i.imgur.com/KfuCv0X.png)
 > 在原始碼中加入註解

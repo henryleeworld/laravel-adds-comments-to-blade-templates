@@ -14,6 +14,7 @@ return [
         Spatie\BladeComments\Commenters\BladeCommenters\IncludeCommenter::class,
         Spatie\BladeComments\Commenters\BladeCommenters\IncludeIfCommenter::class,
         Spatie\BladeComments\Commenters\BladeCommenters\IncludeWhenCommenter::class,
+        Spatie\BladeComments\Commenters\BladeCommenters\IncludeUnlessCommenter::class,
         Spatie\BladeComments\Commenters\BladeCommenters\LivewireComponentCommenter::class,
         Spatie\BladeComments\Commenters\BladeCommenters\LivewireDirectiveCommenter::class,
         Spatie\BladeComments\Commenters\BladeCommenters\SectionCommenter::class,
@@ -37,7 +38,19 @@ return [
 
     /*
      * This class is responsible for calling the registered Blade commenters.
-     * In most case, you don't need to modify this class.
+     * In most cases, you don't need to modify this class.
      */
     'precompiler' => Spatie\BladeComments\BladeCommentsPrecompiler::class,
+
+    'excludes' => [
+        /**
+         * Add includes you don't want to be affected by the package here.
+         * For example:
+         *  'styles.theme',
+         *  'partials.sidebar',
+         */
+        'includes' => [
+
+        ],
+    ],
 ];
